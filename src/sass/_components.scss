@@ -1,0 +1,66 @@
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding: 5rem 8vw;
+}
+
+.btn {
+  padding: 1rem 3rem;
+  background-color: $main;
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  font-weight: 400;
+  transition: background-color .4s ease;
+
+  &:hover{
+    background-color: $main-dark;
+  }
+}
+
+.section-header {
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  text-align: center;
+  color: $text;
+
+  &--wide {
+    max-width: 100%;
+    margin-bottom: 3.8rem;
+  }
+
+  .section-heading {
+    margin-bottom: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: min(10vw, 5.3rem);
+
+    &--white {
+      color: white;
+      font-size: min(7.3vw, 4rem);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 8rem 8vw;
+  }
+
+  .section-header {
+    margin-bottom: 12rem;
+
+    &--wide {
+      margin-bottom: 7rem;
+    }
+  }
+}
